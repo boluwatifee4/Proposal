@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(247, 172, 33);
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.ctn{
+    width: fit-content;
+    border-radius: 2rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 10rem;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    animation: 2.5s linear 0s 1 slideInFromLeft;
+    margin-top: 10rem !important;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  h2{
+      color: rgb(189, 188, 187);
+  }
+  .p{
+      display: flex;
+        justify-content: center;
+      background-color: rgb(201, 132, 5);
+      padding: .5rem;
+      margin: 1rem;
+      font-size: 1.2rem;
+      border-bottom-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      transition: 1s ease-in-out;
+  }
+
+.p:hover{
+    border-bottom-right-radius: 5rem;
+      border-top-left-radius: 5rem; 
+      font-size: 1.25rem;
+}
+h1,h2{
+    margin: .5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Proposal styling */
+@media only screen and (max-width:1024px) and (min-width: 280px){
+.ctn{
+    margin: 1rem 2rem;
+    
+}
+h1,h2{
+    font-size: 1.2rem;
+}
+}
